@@ -1,0 +1,10 @@
+{
+    "version": "1",
+    "menu": {
+        "isadmin": {
+          "label": "Is Admin?",
+	  "path": "isadmin.html"
+        }
+    }
+}
+

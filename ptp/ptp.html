@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PTP Management</title>
+    <meta charset="utf-8" />
+    <link href="../../static/branding.css" rel="stylesheet" />
+    <link href="../../static/css-overrides.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="../base1/cockpit.js"></script>
+    <script src="ptp.js"></script>
+    <style>
+        body { padding: 20px; font-family: sans-serif; }
+        .card { 
+            background: #fff; 
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            margin-bottom: 20px; 
+            border-radius: 4px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        h2 { margin-top: 0; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Precision Time Protocol (PTP) Monitor</h1>
+        
+        <div class="card">
+            <h2>1. Service Status (ptp4l)</h2>
+            <p>Checks if the hardware timestamping service is active.</p>
+            <pre id="service-status">Loading service status...</pre>
+        </div>
+
+        <div class="card">
+            <h2>2. Live Sync Status (pmc)</h2>
+            <p>Queries the PTP Management Client for the current data set (offset from master).</p>
+            <pre id="pmc-data">Loading PMC data...</pre>
+        </div>
+
+        <div class="card">
+            <h2>3. Configuration File</h2>
+            <p>Reads <code>/etc/ptp4l.conf</code>.</p>
+            <pre id="ptp-config">Loading configuration...</pre>
+        </div>
+    </div>
+</body>
+</html>

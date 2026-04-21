@@ -1,0 +1,12 @@
+{
+    "version": "1.0",
+    "external": true,
+    "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-eval' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'",
+    "csp": "script-src 'self' 'unsafe-eval' 'wasm-unsafe-eval'; worker-src 'self' blob:; connect-src 'self' blob: data:; img-src 'self' data:; style-src 'self' 'unsafe-inline';",
+    "menu": {
+        "doom": {
+          "label": "Doom",
+	  "path": "doom.html"
+        }
+    }
+}

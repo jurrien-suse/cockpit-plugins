@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="js-dos.css">
+    <script id="emulators-js" src="emulators.js"></script>
+    <script src="js-dos.js"></script>
+<style>
+    /* Remove scrollbars and make the background black */
+    html, body {
+        margin: 0; padding: 0; width: 100%; height: 100%;
+        background: #000; overflow: hidden;
+    }
+
+    /* Give js-dos a strict 100% boundary to calculate from */
+    #dos-container {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* Keep the UI hidden */
+    .sidebar, .contentbar, .stats-frame {
+        display: none !important;
+    }
+</style>
+</head>
+<body>
+    <div id="dos-container">
+      <h2>Verifing Security Clearance...</h2>
+    </div>
+    <script src="doom-launcher.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+/* style.css */
+body { 
+    padding: 20px; 
+    font-family: sans-serif; 
+}
+
+#admin-message { 
+    color: green; 
+    display: none; 
+    font-weight: bold; 
+    font-size: 1.2em; 
+}
+
+#user-message { 
+    color: blue; 
+    display: none; 
+    font-weight: bold; 
+    font-size: 1.2em; 
+}

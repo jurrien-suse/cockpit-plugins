@@ -1,0 +1,10 @@
+{
+    "version": "1.0",
+    "menu": {
+        "ptp": {
+          "label": "PTP Management",
+          "icon": "time-picker",
+	  "path": "ptp.html"
+        }
+    }
+}

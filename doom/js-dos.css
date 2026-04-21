@@ -1,0 +1,10 @@
+#dos {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Hide the 'locked' focus ring that triggers the error */
+:focus {
+    outline: none !important;
+}
